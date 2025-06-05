@@ -1,51 +1,75 @@
+
 # 💳 Digital Wallet
 
 [![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://www.docker.com/)
+[![Java](https://img.shields.io/badge/Java-21-blue?logo=java)](https://www.oracle.com/java/)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)]()
 
-Este projeto é uma carteira digital desenvolvida em Java, com o principal objetivo de aplicar na prática os conhecimentos previamente adquiridos sobre arquitetura hexagonal, Domain-Driven Design (DDD) e Kafka. Trata-se de um desafio de backend proposto pelo PicPay, chamado 'PicPay Simplificado', que já havia sido realizado anteriormente e que agora refiz, reestruturando-o em uma versão mais robusta e aprimorada.
+> 🧠 Projeto desenvolvido para consolidar conhecimentos em **Arquitetura Hexagonal**, **DDD** e **Kafka**, utilizando **Java 21** com **Spring Boot** e **Kafka**.
+
+---
+
+## 📘 Sobre o Projeto
+
+Este projeto é uma **carteira digital** desenvolvida em Java, com o principal objetivo de aplicar na prática os conhecimentos previamente adquiridos sobre arquitetura hexagonal, Domain-Driven Design (DDD) e Kafka.
+Trata-se de um desafio de backend proposto pelo PicPay, chamado **'PicPay Simplificado'**, que já havia sido realizado anteriormente e agora foi refeito por mim, reestruturando-o em uma versão mais robusta e aprimorada.
+
+---
 
 ## 🚀 Tecnologias Utilizadas
- 
-- [Spring Boot](https://spring.io/projects/spring-boot)
-- [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
-- [Spring for Apache Kafka](https://spring.io/projects/spring-kafka)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [H2](https://www.h2database.com/html/main.html)
+
+- ⚙️ [Spring Boot](https://spring.io/projects/spring-boot)
+- 🧩 [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
+- 🔄 [Spring for Apache Kafka](https://spring.io/projects/spring-kafka)
+- 🐳 [Docker Compose](https://docs.docker.com/compose/)
+- 🗃️ [H2 Database](https://www.h2database.com/html/main.html)
+
+---
 
 ## 🧱 Arquitetura Hexagonal + DDD
 
-O projeto segue princípios de arquitetura hexagonal com DDD (Domain-Driven Design).
+O projeto foi estruturado seguindo os princípios da **Arquitetura Hexagonal** e **Domain-Driven Design (DDD)**:
+
+---
 
 ## ✅ Funcionalidades
 
-- ✅ Efetuar transferência entre usuários
-- 🔁 Consultar transferências
-- ⭐ Enviar notificação
-- 📊 Consultar carteiras
+| Funcionalidade                       
+|-------------------------------------------------|
+| 💸 Efetuar transferência entre usuários 
+| 🔁 Consultar transferências          
+| 📢 Enviar notificação                
+| 📊 Consultar carteiras               
 
+---
 
 ## ⚙️ Pré-requisitos
 
-- [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/)
+Antes de executar o projeto, certifique-se de ter instalado:
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 - [Java 21](https://www.oracle.com/java/)
 
 ---
 
-## Como Executar
+## 🧪 Como Executar
 
-- Clonar repositório git:
-```
+```bash
+# 1. Clonar o repositório
 git clone https://github.com/Renan1Pollo/digitalwallet.git
-```
-- Executar o Kafka:
-```
+cd digitalwallet
+
+# 2. Subir os serviços Kafka com Docker Compose
 docker-compose up
+
+# 3. Executar a aplicação Spring Boot
+# Acesse http://localhost:8080 para verificar a execução
 ```
-- Executar a aplicação Spring Boot
-- Acessar aplicação em `http://localhost:8080`.
 
-
+---
 
 ## 📬 Contato
 
-Desenvolvido por [Renan Pollo Benelli](https://github.com/Renan1Pollo)
+Desenvolvido com ❤️ por [Renan Pollo Benelli](https://github.com/Renan1Pollo)  
+📧 renanpollodev18@gmail.com
