@@ -3,7 +3,6 @@
 
 [![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://www.docker.com/)
 [![Java](https://img.shields.io/badge/Java-21-blue?logo=java)](https://www.oracle.com/java/)
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)]()
 
 > 🧠 Projeto desenvolvido para consolidar conhecimentos em **Arquitetura Hexagonal**, **DDD** e **Kafka**, utilizando **Java 21** com **Spring Boot** e **Kafka**.
 
