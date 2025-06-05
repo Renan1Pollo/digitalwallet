@@ -1,4 +1,4 @@
-package br.com.renanpollo.digitalwallet.transaction.domain;
+package br.com.renanpollo.digitalwallet.transaction.domain.entity;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
@@ -17,5 +17,6 @@ public record Transaction(
 
     public Transaction {
         value = value.setScale(2);
+        createdAt = LocalDateTime.now();
     }
 }

@@ -1,7 +1,7 @@
-package br.com.renanpollo.digitalwallet.wallet.domain;
+package br.com.renanpollo.digitalwallet.wallet.domain.entity;
 
 public enum WalletType {
-    COMUM(1), LOJISTA(2);
+    COMMON(1), MERCHANT(2);
 
     private final int value;
 

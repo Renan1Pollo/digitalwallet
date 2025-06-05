@@ -1,4 +1,4 @@
-package br.com.renanpollo.digitalwallet.wallet.domain;
+package br.com.renanpollo.digitalwallet.wallet.domain.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
@@ -16,8 +16,7 @@ public record Wallet(
         BigDecimal balance) {
 
     public Wallet debit(BigDecimal value) {
-        return new Wallet(id, fullName, cpf, email, password, type,
-                balance.subtract(value));
+        return new Wallet(id, fullName, cpf, email, password, type, balance.subtract(value));
     }
 
     public Wallet credit(BigDecimal value) {
